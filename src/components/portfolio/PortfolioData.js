@@ -15,7 +15,7 @@ const portfolioData = [
         img: image1,
         name: "Solidify",
         type: "Website",
-        url: '../../../../Solidify/templates/index.html',
+        url: 'https://solidifyblockchain.netlify.com/',
         githubUrl: "https://www.github.com/micahsuomi/Portfolio-Page/tree/master/Solidify"
 
     },
@@ -25,8 +25,8 @@ const portfolioData = [
         img: image2,
         name: "Noirflix",
         type: "Website with Bootstrap",
-        url: 'https://www.michelezuccawebdev.com/noirflix/templates/landing.html',
-        githubUrl: "https://github.com/micahsuomi/Portfolio-Page/tree/master/noirflix"
+        url: 'https://noirflix.netlify.com/',
+        githubUrl: "https://github.com/micahsuomi/Noirflix"
 
         
     },
@@ -36,8 +36,8 @@ const portfolioData = [
         img: image3,
         name: "Evenflow",
         type: "Website",
-        url: 'https://www.michelezuccawebdev.com/evenflow/templates/index.html',
-        githubUrl: "https://github.com/micahsuomi/Portfolio-Page/tree/master/noirflix"
+        url: 'https://evenflow.netlify.com/',
+        githubUrl: "https://github.com/micahsuomi/Evenflow"
 
     },
 
@@ -47,7 +47,7 @@ const portfolioData = [
         name: "Sketch Like a Pro",
         type: "Landing Page",
         url: "https://sketchlikeapro.netlify.com/",
-        githubUrl: "https://github.com/micahsuomi/Portfolio-Page/tree/master/noirflix"
+        githubUrl: "https://github.com/micahsuomi/Sketch-like-a-Pro"
 
     },
 
