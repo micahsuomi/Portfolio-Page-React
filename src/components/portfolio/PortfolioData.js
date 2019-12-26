@@ -46,7 +46,7 @@ const portfolioData = [
         img: image4,
         name: "Sketch Like a Pro",
         type: "Landing Page",
-        url: "../../sketch-like-a-pro/index.html",
+        url: "https://sketchlikeapro.netlify.com/",
         githubUrl: "https://github.com/micahsuomi/Portfolio-Page/tree/master/noirflix"
 
     },
