@@ -1,0 +1,134 @@
+.skills-container {
+    padding: 7rem 2rem;
+}
+
+.skills-container {
+    text-align: center;
+}
+
+.skills-container h1{
+    color: var(--shadow);
+    text-transform: uppercase;
+    font-size: var(--font-size-big);
+}
+
+.skills-wrapper {
+    margin-top: 5rem;
+    height: 50rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+.skills-headline-top {
+    margin-top: 8rem;
+    font-size:var(--font-size-medium);
+    color: var(--light);
+}
+
+
+.skills-headline-bottom {
+    margin-top: 3rem;
+    font-size:var(--font-size-medium);
+    color: var(--light);
+
+}
+.skills-wrapper ul {
+    list-style: none;
+    margin: 2rem auto;
+}
+
+
+.skills-wrapper ul li {
+    line-height: 1.8rem;
+    color:var(--light);
+    opacity: 0.8;
+    font-weight: 300;
+    font-size: var(--font-size-small);
+    line-height: 1.8;
+
+}
+
+.skills-wrapper1 {
+    background: var(--dark-shaded);
+    -webkit-clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+
+
+}
+
+.skills-wrapper2 {
+    background: #46dfdf;
+    opacity: 0.6;
+    -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+    font-weight: 700;
+    
+}
+
+.skills-wrapper2 .skills-headline-top,.skills-headline-bottom-2 {
+    color: var(--dark);
+}
+.skills-wrapper2 ul li {
+    color: var(--shaded-dark);
+    
+}
+
+
+.grow {
+    transition: all .2s ease-in-out;
+}
+.grow:hover {
+    transform: scale(1.1);
+    z-index: 5;
+}
+
+@media(max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 850px) {
+    .skills-container {
+        padding: 0 0;
+    }
+    
+    .skills-container h1 {
+        margin: 5rem;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    
+    .skills-container {
+        padding: 0;
+        margin-top: 7rem;
+    }
+
+    .skills-container h1 {
+        margin-top: 5rem;
+    }
+    
+    .skills-wrapper {
+        grid-template-columns: 1fr;
+        height: 100%;
+
+    }
+    .skills-wrapper1 {
+        -webkit-clip-path: polygon(0 0, 86% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 86% 0, 100% 100%, 0% 100%);
+    
+    }
+
+    .skills-wrapper2 {
+        -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+        height: 100%;
+        color: var(--dark); 
+
+    }
+
+
+}

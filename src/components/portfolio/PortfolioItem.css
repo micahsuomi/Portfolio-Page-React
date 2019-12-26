@@ -1,0 +1,116 @@
+.website-card-container {
+    position: relative;
+    box-shadow: 3rem 2rem 3rem rgba(0, 0, 0, 0.6); 
+    
+}
+
+.show {
+    animation: appear;
+}
+
+@keyframes appear {
+    from {opacity:0;} to {opacity: 1;}
+}
+
+.website-card-container-2 {
+    position: relative;
+    box-shadow: 3rem 2rem 3rem rgba(0, 0, 0, 0.6); 
+    
+}
+
+.website-card-container img:hover {
+    opacity: 0.3;
+    filter:blur(30%);
+}
+
+.website-hide img {
+    width: 100%;
+    display: block;
+    height: auto; 
+    opacity: 1;
+
+}
+
+
+.website_show {
+    background: var(--dark);
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    height: 100%;
+    
+  }
+
+  .website_show-display {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    
+}
+
+.website_show:hover {
+    opacity: 0.85;
+}
+
+
+.websitename {
+    color: white;
+    font-size: var(--font-size-medium);
+    font-weight: 400;
+}
+
+.website-type {
+    margin-top: 1.2em;
+}
+
+
+.website:hover {
+    cursor: pointer;
+    -webkit-filter: brightness(80%);
+    filter: brightness(80%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 0.5s ease;
+
+}
+
+
+
+.button-container {
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-btn {
+    width: 15rem;
+    height: 5rem;
+    background: var(--dark-shaded);
+    border: 1px solid rgb(170, 165, 165);
+    font-family: "Montserrat";
+    color: rgb(221, 197, 197);
+    margin-top:1rem;
+    padding: 1.2rem;
+    
+}
+
+.portfolio-btn a {
+    text-decoration: none;
+    color: skyblue;
+}
+
+.portfolio-btn:hover {
+    filter: brightness(90%);
+    color: skyblue;
+}
+

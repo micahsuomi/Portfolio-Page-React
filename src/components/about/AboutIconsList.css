@@ -1,0 +1,24 @@
+.about-container2 {
+    padding: 5rem;
+}
+.about-wrapper2 {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2em;
+    text-align: center;
+    align-items: center;  
+    justify-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .about-wrapper2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .about-wrapper2 {
+        grid-template-columns: 1fr;
+
+    }
+}

@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  
+}
+
+@media(max-width: 1250px) {
+  html {
+      font-size: 56%;
+  }
+}
+
+@media(max-width: 800px) {
+  html {
+      font-size: 50%;
+  }
+}
+
+@media(max-width: 500px) {
+  html {
+      font-size: 45%;
+  }
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500');
+
+
+/*VARIABLES*/
+
+:root {
+  --primary: rgb(238, 217, 217);
+  --light: rgb(250, 245, 245);
+  --dark: rgb(51, 42, 42);
+  --dark-transparent:rgb(51, 42, 42, .6);
+  --dark-shaded: linear-gradient(120deg, rgb(56, 52, 52) 0%, rgb(29, 26, 26) 100%);
+  --shadow-faded:linear-gradient(120deg, #a59090 0%, #856969 100%);
+  --shadow: rgb(104, 64, 64);
+  --hover: rgb(135, 206, 235);
+  --lightblue: rgb(101, 149, 165);
+  --hoverlight: rgb(238, 197, 202);
+  --shaded-dark: linear-gradient(120deg, #9becd4 0%, #46dfdf 100%);
+  --cardline:rgb(212, 186, 186);
+  --brown-red: rgb(134, 34, 9);
+
+  --font-size-big: 4rem;
+  --font-size-medium: 2rem;
+  --font-size-small: 1.6rem;
+  --font-size-verysmall: 1.2rem;
+
+}
+
+
+.App {
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.show {
+  display: block;
+  animation: disappear;
+
+
+}
+
+
+
+.hide {
+  display: none;
+  animation: disappear;
+
+  
+
+}
