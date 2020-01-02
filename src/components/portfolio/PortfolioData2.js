@@ -6,7 +6,11 @@ const portfolioData2 = [
         id:6,
         img: image6,
         name: "STAR WARS API DATA",
-        type: "React App"
+        type: "React App",
+        url: "https://starwarsapis.netlify.com/",
+        githubUrl: "https://github.com/micahsuomi/Star-Wars-APIs-React-App"
+
+        
     },
 
     {

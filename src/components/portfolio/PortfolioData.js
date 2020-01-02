@@ -5,9 +5,6 @@ import image4 from '../../imgs/website4-card.png';
 import image5 from '../../imgs/website5_2-card.PNG';
 
 
-
-
-
 const portfolioData = [
 
     {
@@ -16,7 +13,7 @@ const portfolioData = [
         name: "Solidify",
         type: "Website",
         url: 'https://solidifyblockchain.netlify.com/',
-        githubUrl: "https://www.github.com/micahsuomi/Portfolio-Page/tree/master/Solidify"
+        githubUrl: "https://github.com/micahsuomi/Solidify"
 
     },
 
@@ -56,8 +53,8 @@ const portfolioData = [
         img: image5,
         name: "EAT.TASTE.TRY.",
         type: "Landing Page with Sass",
-        url: "../../eat.taste.try_Sass/pages/index.html",
-        githubUrl: "https://github.com/micahsuomi/Portfolio-Page/tree/master/noirflix"
+        url: "https://eat-taste-try.netlify.com/",
+        githubUrl: "https://github.com/micahsuomi/EAT.TASTE.TRY"
 
 
     }
