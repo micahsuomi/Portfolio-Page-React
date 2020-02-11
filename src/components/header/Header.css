@@ -2,7 +2,7 @@
 .frontpage-container {
     position:relative;
     background: black;
-    background-image: url("../../imgs/background2.png");
+    background-image: url("../../imgs/background2.jpg");
     background-size: cover;
     background-position: center;
     min-height: 100vh;
