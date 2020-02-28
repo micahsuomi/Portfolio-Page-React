@@ -2,7 +2,7 @@ import React from 'react';
 import AboutLeft from './AboutLeft';
 import AboutRight from './AboutRight';
 import AboutIconList from './AboutIconsList';
-import './About.css';
+import '../../assets/style/About.css';
 
 const About = (props) => {
     return (

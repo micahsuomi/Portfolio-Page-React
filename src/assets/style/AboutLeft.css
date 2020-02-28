@@ -23,19 +23,31 @@
     font-size: var(--font-size-small);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .about-text {
-        padding: 1rem 5rem;
-        width: 38em;
+        padding: 1rem 3rem;
+        width: 48em;
+        clip-path: polygon(0 0, 100% 0, 87% 100%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 87% 100%, 0 100%);
     }
 }
 
 @media screen and (max-width: 500px) {
     .about-text {
         clip-path: none;
+        width: 52em;
         -webkit-clip-path: none;
-        width: 100%;
-        padding: 3rem 9rem;
+        padding: 3rem 5rem;
 
     }
+
+}
+
+@media screen and (max-width: 320px) {
+    .about-text {
+        
+        padding: 3rem 5rem;
+
+    }
+
 }

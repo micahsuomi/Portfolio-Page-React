@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './AboutLeft.css';
+import '../../assets/style/AboutLeft.css';
 
 class AboutLeft extends Component {
     constructor(props) {
@@ -7,7 +7,7 @@ class AboutLeft extends Component {
         this.state = {
             header: "About Me",
             paragraph1: "I'm a self-thought Front-End developer currently studying Full-Stack Development at Integrify Academy in Helsinki.",
-            paragraph2: "I focus on responsive and user-friendly design, UI and prototyping. My stack of choice is currently React. When I'm not coding, I'm into UI/UX Design, painting, digital illustrations and photography."
+            paragraph2: "I focus on responsive and user-friendly design, UI and prototyping. My stack of choice is currently JavaScript and React. When I'm not coding, I'm into UI/UX Design, painting, digital illustrations and photography."
         }
     }
     render() {

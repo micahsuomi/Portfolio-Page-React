@@ -1,18 +1,26 @@
 import React from 'react';
-import './Footer.css';
+import '../../assets/style/Footer.css';
+import footerData from './footerData';
+import SocialLink from '../commons/SocialLink';
 
 const Footer = () => {
+
+    const formattedData = footerData.map((item, index) => (
+
+        <SocialLink 
+        key={index}
+        link={item.link} 
+        icon={item.icon} />
+    ))
+
     return (
-        <div class="dark-footer">
-            <div class="footer-grid">
-                <div class="nested-footer">
-                    <div><h4 class="footer-name">Michele Zucca</h4></div>
-                    <div class="social-footer">
+        <div className="dark-footer">
+            <div className="footer-grid">
+                <div className="nested-footer">
+                    <div><h4 className="footer-name">Michele Zucca</h4></div>
+                    <div className="social-footer">
                         <ul>
-                            <li><a href="https://www.linkedin.com/in/michele-zucca/"><i class="fab fa-linkedin"></i></a></li>
-                            <li><a href="https://github.com/micahsuomi"><i class="fab fa-github"></i></a></li>
-                            <li><a href="https://www.facebook.com/michele.zucca.18"><i class="fab fa-facebook"></i></a></li>
-                            <li><a href="https://www.instagram.com/mikibrightcrypto/?hl=en"><i class="fab fa-instagram"></i></a></li>
+                            {formattedData}
                         </ul>
                     </div>
                 </div>

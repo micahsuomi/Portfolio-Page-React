@@ -43,7 +43,6 @@
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
-    height: 100%;
     
   }
 
@@ -99,7 +98,7 @@
     border: 1px solid rgb(170, 165, 165);
     font-family: "Montserrat";
     color: rgb(221, 197, 197);
-    margin-top:1rem;
+    margin-top: 1rem;
     padding: 1.2rem;
     
 }
@@ -114,3 +113,15 @@
     color: skyblue;
 }
 
+@media screen and (max-width: 768px) {
+    .website_show {
+        opacity: 1
+    }
+}
+@media screen and (max-width: 500px) {
+    .portfolio-btn {
+        width: 18rem;
+        padding: 1rem;
+        
+    }
+}

@@ -1,8 +1,7 @@
 
 .frontpage-container {
     position:relative;
-    background: black;
-    background-image: url("../../imgs/background2.jpg");
+    background-image: linear-gradient(rgba(163, 144, 142, 0.8), rgba(92, 61, 61, 0.3)), url("../../assets/imgs/background2.jpg");  
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -28,6 +27,57 @@
     color: var(--light);
     font-weight: 300;
 
+}
+
+.change-font-size {
+    font-size: 70px;
+}
+
+.change-font-weight {
+    font-weight: 700;
+    transition: all ease-in-out 3s;
+
+}
+
+.change-font-family {
+    font-family: 'Montserrat', sans-serif;
+    transition: all ease-in-out 3s;
+
+}
+
+.change-alignment {
+    text-align: right;
+    transition: all ease-in-out 5s;
+
+}
+
+.reduce-opacity {
+    opacity: 0.2;
+    transition: all ease-in-out 2s;
+}
+
+.change-line-height {
+    line-height: 1.7;
+    transition: ease-in-out 5s;
+
+}
+
+.change-letter-spacing {
+    letter-spacing: 1.5rem;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(-120px);
+    }
+    100% {
+        transform: translateY(170px);
+    }
+    }
+
+@keyframes showHide {
+    from{opacity:0.4};
+    to{opacity:1}
 }
 
 .name {
@@ -85,6 +135,19 @@
 .front-wrapper .fas:hover {
     color: var(--shadow);
 }
+
+.title {
+    font-size: 60px;
+    line-height: 1.9;
+    animation: move 60s infinite alternate;
+    transition: all ease-in-out 10s;
+    animation: showHide;
+    animation-duration: 10s;
+    margin-top: 10rem;
+
+
+
+} 
 
 @keyframes move {
     0% {

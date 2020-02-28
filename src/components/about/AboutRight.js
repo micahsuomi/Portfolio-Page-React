@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './AboutRight.css';
+import '../../assets/style/AboutRight.css';
 
 class AboutRight extends Component {
     render() {

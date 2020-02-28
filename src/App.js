@@ -4,7 +4,7 @@ import './App.css';
 import Navbar from './components/navbar/Navbar';
 import Header from './components/header/Header';
 import About from './components/about/About';
-import Portfolio from './components/portfolio/Portfolio';
+import PortfolioList from './components/portfolio/PortfolioList';
 import Skills from './components/skills/Skills';
 import Contact from './components/contact/Contact';
 import BackToTopButton from './components/commons/BackToTopButton';
@@ -31,7 +31,7 @@ function App() {
       <Navbar />
       <Header />
       <About />
-      <Portfolio />
+      <PortfolioList />
       <Skills />
       <BackToTopButton />
       <Contact />

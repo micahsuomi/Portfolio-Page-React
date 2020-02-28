@@ -1,5 +1,5 @@
 import React from 'react';
-import './BackToTopButton.css';
+import '../../assets/style/BackToTopButton.css';
 
 const BackToTopButton = () => {
     window.onscroll = function() {
@@ -19,11 +19,10 @@ const BackToTopButton = () => {
     const topFunction = () => {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
-        console.log('working')
     }
     return (
         <div>
-             <button onClick={topFunction} class="btn-info" id="myBtn" title="Go to Top"><i class="fas fa-chevron-up"></i></button>
+             <button onClick={topFunction} className="btn-info" id="myBtn" title="Go to Top"><i className="fas fa-chevron-up"></i></button>
         </div>
     )
 }

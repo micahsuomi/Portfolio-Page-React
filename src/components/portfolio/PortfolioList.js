@@ -1,36 +1,54 @@
 import React, { Component } from 'react';
-import './Portfolio.css';
+import '../../assets/style/Portfolio.css';
 import PortfolioItem from './PortfolioItem';
 import portfolioData from './PortfolioData';
 import portfolioData2 from './PortfolioData2';
+import portfolioData3 from './PortfolioData3';
 
 
-class Portfolio extends Component {
+
+class PortfolioList extends Component {
     constructor() {
         super();
         this.state = {
             isWebsiteShowing: true,
+            isJavaScriptShowing: false,
             isReactShowing: false
             
         }
 
         this.showWebsite = this.showWebsite.bind(this);
+        this.showJavaScript = this.showJavaScript.bind(this);
         this.showReact = this.showReact.bind(this);
     }
 
 
     showWebsite() {
-        this.setState({isWebsiteShowing : true, isReactShowing : false})   
+        this.setState({isWebsiteShowing : true, isJavaScriptShowing: false, isReactShowing : false})   
     }
 
+    showJavaScript() {
+        this.setState({isJavaScriptShowing: true, isWebsiteShowing: false, isReactShowing: false})
+    }
+    
     showReact() {
-        this.setState({isReactShowing: true, isWebsiteShowing: false})
+        this.setState({isReactShowing: true, isWebsiteShowing: false, isJavaScriptShowing: false})
     }
 
     render() {
 
        
-    const portfolioWebsites = portfolioData.map((portfolioItem) => {
+    const portfolioWebsites = portfolioData.map((portfolioItem, index) => {
+        return <PortfolioItem 
+        key = {index}
+        websiteImage = {portfolioItem.img}
+        websiteName = {portfolioItem.name}
+        type = {portfolioItem.type}
+        urlWebsite={portfolioItem.url}
+        github={portfolioItem.githubUrl} />
+    })
+
+    const portfolioJavaScript = portfolioData2.map((portfolioItem) => {
         return <PortfolioItem 
         key = {portfolioItem.id}
         websiteImage = {portfolioItem.img}
@@ -40,7 +58,7 @@ class Portfolio extends Component {
         github={portfolioItem.githubUrl} />
     })
 
-        const portfolioReact = portfolioData2.map((portfolioItem) => {
+        const portfolioReact = portfolioData3.map((portfolioItem) => {
             return <PortfolioItem 
             key = {portfolioItem.id}
             websiteImage = {portfolioItem.img}
@@ -57,10 +75,16 @@ class Portfolio extends Component {
                     <h2><span className="port-header">Portfo</span>lio Work</h2>
                         <div className="portfolio-type-wrapper">
                             <div className="portfolio-type-btn-container">
+
                                 <button className="btn-portfolio-type" 
                                 id="html-btn" 
                                 onClick={this.showWebsite} 
                                 style={this.state.isWebsiteShowing ? {backgroundColor: "lightslategray"} : {backgroundColor: "lightgrey"}}>HTML, CSS, JavaScript</button>
+
+                                <button className="btn-portfolio-type" 
+                                id="javascript-btn" 
+                                onClick={this.showJavaScript}
+                                style={this.state.isJavaScriptShowing ? {backgroundColor: "lightslategray"} : {backgroundColor: "lightgrey"}}>JavaScript</button>
 
                                 <button className="btn-portfolio-type" 
                                 id="react-btn" 
@@ -70,6 +94,12 @@ class Portfolio extends Component {
                                 <div className="portfolio-wrapper show" id="websites-projects">
                                 {this.state.isWebsiteShowing ? portfolioWebsites : null}
                                 </div>
+
+                                
+                                <div className="portfolio-wrapper show" id="websites-projects">
+                                {this.state.isJavaScriptShowing ? portfolioJavaScript : null}
+                                </div>
+
 
                                 <div className="portfolio-wrapper" id="websites-projects">
                                 {this.state.isReactShowing ? portfolioReact : null}
@@ -90,4 +120,4 @@ class Portfolio extends Component {
 
 
 
-export default Portfolio;
+export default PortfolioList;

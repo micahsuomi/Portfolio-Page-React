@@ -1,6 +1,6 @@
 import React from 'react';
 import AboutIcon from './AboutIcon';
-import './AboutIconsList.css';
+import '../../assets/style/AboutIconsList.css';
 import AboutIconsListData from './AboutIconsListData';
 
 const AboutIconsList = () => {

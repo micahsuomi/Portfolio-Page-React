@@ -1,5 +1,5 @@
 import React from 'react';
-import './AboutIcon.css';
+import '../../assets/style/AboutIcon.css';
 
 const AboutIcon = (props) => {
     
