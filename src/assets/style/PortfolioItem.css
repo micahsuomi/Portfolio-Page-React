@@ -126,6 +126,7 @@
         
     }
 
+
     .website-hide {
         width: 87%;
         height: 100%;
@@ -137,6 +138,15 @@
         filter: brightness(30%);
 
     }
+}
+
+@media screen and (max-width: 320px) {
+    .website-hide {
+        width: 97%;
+
+    }
+
+ 
 }
 
 

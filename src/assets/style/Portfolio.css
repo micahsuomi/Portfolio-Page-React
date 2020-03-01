@@ -97,11 +97,10 @@
         text-align: center;
         padding: 2rem;
     }
+
     .btn-portfolio-type {
         padding: 2.6rem;
         font-size: var(--font-size-verysmall);
-        width: 9;
-
         
     }
 
@@ -135,4 +134,11 @@
         background: var(--dark-transparent);
     }
 
+}
+
+@media screen and (max-width: 320px) {
+    .btn-portfolio-type {
+        padding: 2.2rem;
+        
+    }
 }
