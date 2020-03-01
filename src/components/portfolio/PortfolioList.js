@@ -79,17 +79,17 @@ class PortfolioList extends Component {
                                 <button className="btn-portfolio-type" 
                                 id="html-btn" 
                                 onClick={this.showWebsite} 
-                                style={this.state.isWebsiteShowing ? {backgroundColor: "lightslategray"} : {backgroundColor: "lightgrey"}}>HTML, CSS, JavaScript</button>
+                                style={this.state.isWebsiteShowing ? styles.style1 : styles.style2}>HTML, CSS, JavaScript</button>
 
                                 <button className="btn-portfolio-type" 
                                 id="javascript-btn" 
                                 onClick={this.showJavaScript}
-                                style={this.state.isJavaScriptShowing ? {backgroundColor: "lightslategray"} : {backgroundColor: "lightgrey"}}>JavaScript</button>
+                                style={this.state.isJavaScriptShowing ? styles.style1 : styles.style2}>JavaScript</button>
 
                                 <button className="btn-portfolio-type" 
                                 id="react-btn" 
                                 onClick={this.showReact}
-                                style={this.state.isReactShowing ? {backgroundColor: "lightslategray"} : {backgroundColor: "lightgrey"}}>React</button>
+                                style={this.state.isReactShowing ? styles.style1 : styles.style2}>React</button>
 
                                 <div className="portfolio-wrapper show" id="websites-projects">
                                 {this.state.isWebsiteShowing ? portfolioWebsites : null}
@@ -118,6 +118,10 @@ class PortfolioList extends Component {
 
 }
 
+const styles = {
+    style1: {backgroundColor: '#3d4554'},
+    style2: {backgroundColor: '#8293b3'}
+}
 
-
+console.log(styles.style1)
 export default PortfolioList;

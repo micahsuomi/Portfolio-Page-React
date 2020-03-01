@@ -1,6 +1,7 @@
 .website-card-container {
     position: relative;
     box-shadow: 3rem 2rem 3rem rgba(0, 0, 0, 0.6); 
+    border-radius: 3px;
     
 }
 
@@ -20,7 +21,7 @@
 
 .website-card-container img:hover {
     opacity: 0.3;
-    filter:blur(30%);
+    filter: brightness(30%);
 }
 
 .website-hide img {
@@ -70,10 +71,10 @@
 }
 
 
-.website:hover {
+.website-hide img:hover {
     cursor: pointer;
-    -webkit-filter: brightness(80%);
-    filter: brightness(80%);
+    -webkit-filter: brightness(30%);
+    filter: brightness(30%);
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
@@ -124,4 +125,18 @@
         padding: 1rem;
         
     }
+
+    .website-hide {
+        width: 87%;
+        height: 100%;
+        
+
+    }
+
+    .website-hide img {
+        filter: brightness(30%);
+
+    }
 }
+
+
