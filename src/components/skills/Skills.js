@@ -2,16 +2,32 @@ import React from 'react';
 import '../../assets/style/Skills.css';
 
 const Skills = () => {
-    const techSkills = ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript (ES5, ES6)', 'React JS', 'Sass', 'Python'];
-    const formattedTechSkills = techSkills.map((tech, index) => <li key={index}>{tech}</li>)
+    const frontEndSkills = ['HTML5', 
+                        'CSS3', 
+                        'Sass',
+                        'Bootstrap', 
+                        'JavaScript (ES5, ES6)', 
+                        'React', 
+                         'Redux'];
+    const backEndSkills = ['Node',
+                           'Express']
+
+    const formattedFrontEndSkills = frontEndSkills.map((tech, index) => <li key={index}>{tech}</li>)
+    const formattedbackEndSkills = backEndSkills.map((tech, index) => <li key={index}>{tech}</li>)
+
     return (
         <div className="skills-container headline" id="skills">
                 <h1>Skills</h1>
                 <div className="skills-wrapper">
                     <div className="skills-wrapper1" data-aos="fade-right">
-                        <h3 className="skills-headline-top tagline">Coding skills</h3>
+                        <h3 className="skills-headline-top tagline">Front-End skills</h3>
                         <ul className="tagline">
-                            {formattedTechSkills}
+                            {formattedFrontEndSkills}
+                        </ul>
+                        <h3 className="skills-headline-top tagline">Back-End skills</h3>
+
+                        <ul className="tagline">
+                            {formattedbackEndSkills}
                         </ul>
                     </div>
                     <div className="skills-wrapper2" data-aos="fade-left">

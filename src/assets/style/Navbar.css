@@ -37,7 +37,7 @@ nav ul li a:hover {
 @media(max-width: 850px) {
  
     nav {
-        position:relative;
+        position:fixed;
         opacity: transparent;
     }
 
@@ -70,7 +70,7 @@ nav ul li a:hover {
     .hamburger {
         position: absolute;
         cursor: pointer;
-        top: 50.5%;
+        top: 39.3%;
         right: 2.5%;
         transform: translate(-5%, -45%);
         z-index: 2;
@@ -129,5 +129,11 @@ nav ul li a:hover {
 
     .add-margin {
         margin-top: .8rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hamburger {
+        right: 3%;
     }
 }

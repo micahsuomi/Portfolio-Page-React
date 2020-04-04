@@ -11,9 +11,11 @@ class PortfolioList extends Component {
     constructor() {
         super();
         this.state = {
-            isWebsiteShowing: true,
+            isReactShowing: true,
             isJavaScriptShowing: false,
-            isReactShowing: false
+            isWebsiteShowing: false,
+
+           
             
         }
 
@@ -76,20 +78,22 @@ class PortfolioList extends Component {
                         <div className="portfolio-type-wrapper">
                             <div className="portfolio-type-btn-container">
 
+                            <button className="btn-portfolio-type" 
+                                id="react-btn" 
+                                onClick={this.showReact}
+                                style={this.state.isReactShowing ? styles.style1 : styles.style2}>React</button>
+
+                            <button className="btn-portfolio-type" 
+                                id="javascript-btn" 
+                                onClick={this.showJavaScript}
+                                style={this.state.isJavaScriptShowing ? styles.style1 : styles.style2}>JavaScript</button>
+
+                              
                                 <button className="btn-portfolio-type" 
                                 id="html-btn" 
                                 onClick={this.showWebsite} 
                                 style={this.state.isWebsiteShowing ? styles.style1 : styles.style2}>HTML, CSS, JavaScript</button>
 
-                                <button className="btn-portfolio-type" 
-                                id="javascript-btn" 
-                                onClick={this.showJavaScript}
-                                style={this.state.isJavaScriptShowing ? styles.style1 : styles.style2}>JavaScript</button>
-
-                                <button className="btn-portfolio-type" 
-                                id="react-btn" 
-                                onClick={this.showReact}
-                                style={this.state.isReactShowing ? styles.style1 : styles.style2}>React</button>
 
                                 <div className="portfolio-wrapper show" id="websites-projects">
                                 {this.state.isWebsiteShowing ? portfolioWebsites : null}

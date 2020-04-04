@@ -1,4 +1,4 @@
-import image6 from '../../assets/imgs/mini.png';
+import image6 from '../../assets/imgs/mini.PNG';
 import image7 from '../../assets/imgs/app5.png';
 import image8 from '../../assets/imgs/accountbalance.png';
 

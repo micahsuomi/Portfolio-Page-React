@@ -18,14 +18,16 @@
     text-align: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 3rem;
+
 }
 
 
 
 .skills-headline-top {
-    margin-top: 8rem;
     font-size:var(--font-size-medium);
     color: var(--light);
+
 }
 
 
@@ -55,6 +57,7 @@
     background: var(--dark-shaded);
     -webkit-clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
     clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+    padding: 5rem 3rem;
 
 
 }
@@ -65,6 +68,8 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
     font-weight: 700;
+    padding: 5rem 3rem;
+
     
 }
 

@@ -199,9 +199,7 @@
     
 @media(max-width:500px) {
 
-    .hamburger {
-        right: 6%;
-    }
+    
     .frontpage-container {
         -webkit-clip-path: circle(98.5% at 42% 0);
         clip-path: circle(98.5% at 42% 0);

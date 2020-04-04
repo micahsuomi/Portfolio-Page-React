@@ -81,6 +81,7 @@
    
 }
 
+
 @media screen and (max-width: 500px) {
    
     .portfolio-container {
@@ -131,7 +132,7 @@
 
     .website_show {
         opacity: 1;
-        background: var(--dark-transparent);
+        background: none;
     }
 
 }
