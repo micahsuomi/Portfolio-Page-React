@@ -1,8 +1,8 @@
 import image1 from '../../assets/imgs/solidify.png';
 import image2 from '../../assets/imgs/website2-card.png';
-import image3 from '../../assets/imgs/website3_2-card.PNG';
+import image3 from '../../assets/imgs/website3_2-card@2x.png';
 import image4 from '../../assets/imgs/website4-card.png';
-import image5 from '../../assets/imgs/website5_2-card.PNG';
+import image5 from '../../assets/imgs/website4_2_3.png';
 
 
 const portfolioData = [

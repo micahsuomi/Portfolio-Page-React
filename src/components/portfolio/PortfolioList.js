@@ -39,7 +39,7 @@ class PortfolioList extends Component {
 
     render() {
 
-       
+    
     const portfolioWebsites = portfolioData.map((portfolioItem, index) => {
         return <PortfolioItem 
         key = {index}
@@ -88,7 +88,7 @@ class PortfolioList extends Component {
                                 onClick={this.showJavaScript}
                                 style={this.state.isJavaScriptShowing ? styles.style1 : styles.style2}>JavaScript</button>
 
-                              
+                          
                                 <button className="btn-portfolio-type" 
                                 id="html-btn" 
                                 onClick={this.showWebsite} 
@@ -97,7 +97,7 @@ class PortfolioList extends Component {
 
                                 <div className="portfolio-wrapper show" id="websites-projects">
                                 {this.state.isWebsiteShowing ? portfolioWebsites : null}
-                                </div>
+                                </div> 
 
                                 
                                 <div className="portfolio-wrapper show" id="websites-projects">
