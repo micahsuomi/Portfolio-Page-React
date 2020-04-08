@@ -91,7 +91,10 @@
 
 }
 
-
+.link-website,
+.link-github {
+    cursor: pointer;
+}
 
 .button-container {
     display: flex;
@@ -109,7 +112,7 @@
     color: rgb(221, 197, 197);
     margin-top: 1rem;
     padding: 1.2rem;
-    
+    cursor: pointer;
 }
 
 .portfolio-btn a {

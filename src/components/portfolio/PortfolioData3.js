@@ -12,8 +12,8 @@ const portfolioData3 = [
         img: image9,
         name: "Crypto Lite",
         type: "React App",
-        url: "https://starwarsapis.netlify.com/",
-        githubUrl: "https://github.com/micahsuomi/Star-Wars-APIs-React-App"
+        url: "https://crypto-lite-tracker.netlify.com/",
+        githubUrl: "https://github.com/micahsuomi/Crypto-Tracker-React-App"
 
         
     },

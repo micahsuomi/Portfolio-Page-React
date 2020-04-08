@@ -13,8 +13,8 @@ const PortfolioItem = ({websiteImage, websiteName, type, urlWebsite, github}) =>
                             <h4 className="websitename">{websiteName}</h4> 
                                 <h4 className="websitename website-type">{type}</h4>
                                 <div className="button-container">
-                            <button className="portfolio-btn grow"><a href={`${urlWebsite}`} target="blank">View Project</a></button>
-                        <button className="portfolio-btn grow"><a href={`${github}`} target="blank">View on Github</a></button>
+                                <a href={`${urlWebsite}`} target="blank" className="link-website"><button className="portfolio-btn grow">View Project</button></a>
+                                <a href={`${github}`} target="blank" className="link-github"><button className="portfolio-btn grow">View on Github</button></a>
                     </div>
                 </div>
             </div>
