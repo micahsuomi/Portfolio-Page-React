@@ -1,5 +1,4 @@
 .view-item__container {
-    height: 100vh;
     padding: 7rem 5rem;
     background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
 
@@ -119,4 +118,24 @@
 .portfolio-btn:hover {
     filter: brightness(90%);
     color: skyblue;
+}
+
+@media screen and (max-width: 768px) {
+    .view-item__container {
+        padding: 27rem 5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .view-item__container {
+        padding: 27rem 1rem;
+    }
+
+    .view-item__wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .view-item__title {
+        margin-top: 3rem;
+    }
 }
