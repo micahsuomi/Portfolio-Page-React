@@ -2,6 +2,15 @@
     margin-top: 10rem;
     
 }
+
+.about-header {
+    text-align: center;
+    margin-top: 6rem;
+    text-transform: uppercase;
+    color: var(--shadow);
+    font-size: var(--font-size-big);
+}
+
 .about-wrapper {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -9,6 +18,7 @@
     justify-content: center;
     justify-items: center;
     align-items: center;
+    margin-top: 4rem;
 }
 
 @media screen and (max-width: 500px) {

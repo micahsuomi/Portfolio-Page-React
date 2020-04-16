@@ -34,6 +34,10 @@ nav ul li a:hover {
     color: var(--hover);
 }
 
+.nav-link__active {
+    color: var(--hover);
+}
+
 @media(max-width: 850px) {
  
     nav {
@@ -106,7 +110,11 @@ nav ul li a:hover {
         opacity: 0.9;
         flex-direction: column;
         transition: all .2s ease-out;
+    }
 
+    .navbar-links.close {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 6%, 0 6%);
+        clip-path: polygon(0 0, 100% 0, 100% 6%, 0 6%); 
     }
 
     /* Cross animation when hamburger is clicked */

@@ -74,12 +74,9 @@ body {
 
 }
 
-
-
 .hide {
   display: none;
   animation: disappear;
 
-  
-
 }
+

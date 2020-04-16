@@ -1,7 +1,10 @@
 .website-card-container {
     position: relative;
     box-shadow: 3rem 2rem 3rem rgba(0, 0, 0, 0.6); 
-    border-radius: 3px;
+    border-radius: 25px;
+    overflow: hidden;
+    cursor: pointer;
+
     
 }
 
@@ -13,11 +16,7 @@
     from {opacity:0;} to {opacity: 1;}
 }
 
-.website-card-container-2 {
-    position: relative;
-    box-shadow: 3rem 2rem 3rem rgba(0, 0, 0, 0.6); 
-    
-}
+
 
 .website-card-container img:hover {
     opacity: 0.3;
@@ -50,6 +49,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 15px;
+    padding: 5rem 5rem;
     
     
   }
@@ -70,12 +71,15 @@
 
 .websitename {
     color: white;
-    font-size: var(--font-size-medium);
+    font-size: var(--font-size-small);
     font-weight: 400;
+    display: block;
+    text-transform: uppercase;
 }
 
 .website-type {
     margin-top: 1.2em;
+    text-transform: initial;
 }
 
 
@@ -91,11 +95,6 @@
 
 }
 
-.link-website,
-.link-github {
-    cursor: pointer;
-}
-
 .button-container {
     display: flex;
     margin-top: 2rem;
@@ -103,31 +102,36 @@
     align-items: center;
 }
 
-.portfolio-btn {
-    width: 15rem;
-    height: 5rem;
-    background: var(--dark-shaded);
-    border: 1px solid rgb(170, 165, 165);
+.portfolio-btn-small {
+    width: 10rem;
+    background: rgb(17, 124, 151);
     font-family: "Montserrat";
-    color: rgb(221, 197, 197);
     margin-top: 1rem;
     padding: 1.2rem;
     cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: var(--font-size-small);
+    text-transform: uppercase;
 }
 
-.portfolio-btn a {
-    text-decoration: none;
-    color: skyblue;
-}
+
 
 .portfolio-btn:hover {
     filter: brightness(90%);
-    color: skyblue;
+  
 }
 
 @media screen and (max-width: 768px) {
     .website_show {
-        opacity: 1
+        background: none;
+        opacity: 1;
+    }
+    .website-hide img {
+        filter: brightness(30%);
+
     }
 }
 @media screen and (max-width: 500px) {
@@ -137,7 +141,6 @@
         
     }
 
-
     .website-hide {
         width: 87%;
         height: 100%;
@@ -145,10 +148,7 @@
 
     }
 
-    .website-hide img {
-        filter: brightness(30%);
-
-    }
+    
 }
 
 @media screen and (max-width: 320px) {

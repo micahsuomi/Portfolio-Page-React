@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import {NavLink} from 'react-router-dom';
 import '../../assets/style/Navbar.css';
 
 class Navbar extends Component {
     constructor() {
         super();
         this.state = {
+            isClicked: false,
             addClass: true,
             addRotate: true,
             makeTransparent: false
@@ -14,56 +16,99 @@ class Navbar extends Component {
     }
 
     toggle() {
-        this.setState({addClass : !this.state.addClass, addRotate : !this.state.addRotate, makeTransparent: !this.state.makeTransparent})
+        this.setState({
+            isClicked: false,
+            addClass : !this.state.addClass, 
+            addRotate : !this.state.addRotate, 
+            makeTransparent: !this.state.makeTransparent
+        })
+    }
+
+    closeNavigation = () => {
+        console.log('closing nav')
+        this.setState({
+            isClicked: true,
+            addClass : !this.state.addClass,  
+            addRotate: !this.state.addRotate,
+            makeTransparent : !this.state.makeTransparent, 
+
+
+        })
+        this.toggle()
     }
 
     render() {
-        
-        let navLinksClass =["navbar-links open"];
-        if(this.state.addClass) {
+      
+        let navLinksClass =["navbar-links open close"];
+        if(this.state.addClass === false && this.state.isClicked === false) {
             navLinksClass.push("open");
         }
-
-        let lineRotate1 =["line rotate-1"];
-        if(this.state.addRotate) {
+           
+        let lineRotate1 = ["line rotate-1"];
+        if(this.state.addRotate === true) {
+            console.log('here rotating')
             lineRotate1.push("rotate-1");
         }
 
         let lineRotate2 =["line rotate-3"];
         if(this.state.addRotate) {
             lineRotate2.push("rotate-3");
-        }
+
+        } 
 
         let outsideLineUp =["upper-line"];
-        if(this.state.makeTransparent) {
+        if(this.state.makeTransparent === true) {
             outsideLineUp.push("make-transparent");
         }
 
         let outsideLineDown =["lower-line"];
-        if(this.state.makeTransparent) {
-            outsideLineDown.push("make-transparent");
-        }
-
-
-        
-
+        if(this.state.makeTransparent === true) {
+             outsideLineDown.push("make-transparent");
+         } 
 
 
         return (
                 <nav data-aos="fade-down">
-                        <div className="hamburger" onClick={this.toggle}>
-                            <div className={outsideLineUp.join('')}></div>
-                                <div className={lineRotate1.join('')}></div>
-                                    <div className={lineRotate2.join('')} id="line2"></div>
-                                        <div className={outsideLineDown.join('')} id="lower-line"></div>
+                    <div className="hamburger" onClick={this.toggle}>
+                        <div className={outsideLineUp.join('')}></div>
+                            <div className={lineRotate1.join('')}></div>
+                                <div className={lineRotate2.join('')} id="line2"></div>
+                                    <div className={outsideLineDown.join('')} id="lower-line"></div>
                                     </div>
                                     <ul className={navLinksClass.join('')}>
 
-                                <li className="nav-link grow"><a href="#home" data-aos="flip-down">Home</a></li>
-                        <li className="nav-link grow"><a href="#about" className="grow">About</a></li>
-                    <li className="nav-link grow"><a href="#portfolio" className="grow">Portfolio</a></li>
-                <li className="nav-link grow"><a href="#skills" className="grow">Skills</a></li>
-                <li className="nav-link grow"><a href="#contact" className="grow">Contact</a></li>
+                <li className="nav-link grow">
+                <NavLink to ="/"
+                onClick={this.closeNavigation}
+                activeClassName="nav-link__active">
+                Home
+                </NavLink>
+                </li>
+                <li className="nav-link grow">
+                <NavLink to="/about"
+                onClick={this.closeNavigation}
+                activeClassName="nav-link__active">
+                    About
+                    </NavLink>
+                    </li>
+                    <li className="nav-link grow">
+                        <NavLink to="/portfolio"
+                        onClick={this.closeNavigation}>
+                        Portfolio
+                        </NavLink>
+                        </li>
+                <li className="nav-link grow"
+                onClick={this.closeNavigation}>
+                <NavLink to="/skills">
+                    Skills
+                </NavLink>
+                </li>
+                <li className="nav-link grow" 
+                onClick={this.closeNavigation}>
+                <NavLink to ="/contact">
+                Contact
+                </NavLink>
+                </li>
             </ul>
         </nav>
         )

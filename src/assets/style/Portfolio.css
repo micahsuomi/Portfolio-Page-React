@@ -2,7 +2,7 @@
     background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%, url("../../assets/imgs/portfolio-background.png"));
     background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
     background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
-    background-image: linear-gradient(rgba(239, 233, 243, 0.1), rgba(82, 53, 53, 0.2)), url("../../assets/imgs/portfolio-background.png");
+    /* background-image: linear-gradient(rgba(239, 233, 243, 0.1), rgba(82, 53, 53, 0.2)), url("../../assets/imgs/portfolio-background.png"); */
 
     background-position: center;
     background-size: cover;
@@ -81,6 +81,14 @@
    
 }
 
+@media screen and (max-width: 768px) {
+    .portfolio-wrapper,
+.portfolio-wrapper-2 {
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+}
+
 
 @media screen and (max-width: 500px) {
    
@@ -89,7 +97,6 @@
         padding: 1rem 0;
         -webkit-clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%);
         clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%);
-
 
     }        
     
@@ -131,8 +138,8 @@
     }
 
     .website_show {
-        opacity: 1;
-        background: none;
+        opacity: .7;
+        background-color:none;
     }
 
 }

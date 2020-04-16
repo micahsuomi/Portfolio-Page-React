@@ -1,0 +1,122 @@
+.view-item__container {
+    height: 100vh;
+    padding: 7rem 5rem;
+    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+
+}
+
+.view-item {
+    padding: 2rem 3rem;
+    border: 2px solid lightcyan;
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: 3rem 2rem 3rem rgba(95, 90, 90, 0.6); 
+
+
+}
+
+.view-item__header__nav {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.back-to-portfolio__link {
+    text-decoration: none;
+    font-size: var(--font-size-medium);
+    color: var(--dark);
+
+}
+
+.arrow-alt-circle-left {
+    color: var(--dark);
+    margin: 1rem;
+}
+
+.back-to-portfolio {
+    margin-left: 1rem;
+}
+.view-item__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 3rem 2rem;
+    grid-gap: 1rem;
+ 
+}
+
+.project-img {
+    width: 100%;
+    box-shadow: 3rem 2rem 3rem rgba(95, 90, 90, 0.6); 
+    border-radius: 3px;
+
+}
+.view-item__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-item__title {
+    text-transform: uppercase;
+}
+.view-item__type {
+    margin-top: 2rem;
+    font-size: var(--font-size-medium);
+
+}
+.view-item__right__description {
+    font-size: var(--font-size-small);
+    line-height: 2.1;
+    margin-top: 2rem;
+}
+
+.tech-used__header {
+    font-size: var(--font-size-small);
+    margin-top: 1.5rem;
+}
+.tech-used__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.tech-img {
+    margin: .6rem;
+    width: 5rem;
+    height: 5rem;
+}
+
+.buttons-wrapper {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.portfolio-btn {
+    width: 15rem;
+    height: 5rem;
+    background: var(--dark-shaded);
+    border: none;
+    font-family: "Montserrat";
+    color: rgb(221, 197, 197);
+    margin: .5rem;
+    padding: 1.2rem;
+    font-size: var(--font-size-small);
+    cursor: pointer;
+}
+
+.portfolio-btn a {
+    text-decoration: none;
+    color: skyblue;
+}
+
+.portfolio-btn:hover {
+    filter: brightness(90%);
+    color: skyblue;
+}

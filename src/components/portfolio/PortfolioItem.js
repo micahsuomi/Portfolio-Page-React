@@ -1,20 +1,21 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 import '../../assets/style/PortfolioItem.css';
 
 
-const PortfolioItem = ({websiteImage, websiteName, type, urlWebsite, github}) => {
-
+const PortfolioItem = (props) => {
+    let {id, img, name, type} = props.portfolioItem;
     return (
         
         <div className="website-card-container website-hide website grow tagline display" id="evenflow" data-aos="fade-left">
-                <img src={websiteImage} alt="" />
+                <img src={img} alt="" />
                     <div className="website_show websiteblur">
                         <div className="website_show-display">
-                            <h4 className="websitename">{websiteName}</h4> 
+                            <h4 className="websitename">{name}</h4> 
                                 <h4 className="websitename website-type">{type}</h4>
                                 <div className="button-container">
-                                <a href={`${urlWebsite}`} target="blank" className="link-website"><button className="portfolio-btn grow">View Project</button></a>
-                                <a href={`${github}`} target="blank" className="link-github"><button className="portfolio-btn grow">View on Github</button></a>
+                                <NavLink to={`/viewitem/${id}`} className="portfolio-btn-small grow">View </NavLink>
+                               
                     </div>
                 </div>
             </div>
