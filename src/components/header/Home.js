@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import {NavLink} from 'react-router-dom';
-import {socialData} from '../../data/socialData';
-import SocialLink from '../commons/SocialLink';
 import '../../assets/style/Home.css';
 
 

@@ -25,7 +25,6 @@ class Navbar extends Component {
     }
 
     closeNavigation = () => {
-        console.log('closing nav')
         this.setState({
             isClicked: true,
             addClass : !this.state.addClass,  
@@ -42,6 +41,7 @@ class Navbar extends Component {
         let navLinksClass =["navbar-links open close"];
         if(this.state.addClass === false && this.state.isClicked === false) {
             navLinksClass.push("open");
+            console.log(navLinksClass)
         }
            
         let lineRotate1 = ["line rotate-1"];
@@ -69,45 +69,54 @@ class Navbar extends Component {
 
         return (
                 <nav data-aos="fade-down">
-                    <div className="hamburger" onClick={this.toggle}>
-                        <div className={outsideLineUp.join('')}></div>
-                            <div className={lineRotate1.join('')}></div>
-                                <div className={lineRotate2.join('')} id="line2"></div>
-                                    <div className={outsideLineDown.join('')} id="lower-line"></div>
-                                    </div>
-                                    <ul className={navLinksClass.join('')}>
+                <div className="hamburger" onClick={this.toggle}>
+                <div className={outsideLineUp.join('')}></div>
+                    <div className={lineRotate1.join('')}></div>
+                        <div className={lineRotate2.join('')} id="line2"></div>
+                            <div className={outsideLineDown.join('')} id="lower-line"></div>
+                                </div>
+                                <ul className={navLinksClass.join('')}>
 
-                <li className="nav-link grow">
-                <NavLink to ="/"
-                onClick={this.closeNavigation}
-                activeClassName="nav-link__active">
-                Home
-                </NavLink>
-                </li>
-                <li className="nav-link grow">
-                <NavLink to="/about"
-                onClick={this.closeNavigation}
-                activeClassName="nav-link__active">
-                    About
+                            <li className="nav-link grow">
+                            <NavLink to ="/"
+                            onClick={this.closeNavigation}
+                            activeStyle={activeStyleNav}
+                            exact>
+                            Home
+                            </NavLink>
+                            </li>
+
+                            <li className="nav-link grow">
+                            <NavLink to="/about"
+                            onClick={this.closeNavigation}
+                            activeStyle={activeStyleNav}>
+                                About
+                                </NavLink>
+                                </li>
+                                
+                                <li className="nav-link grow">
+                                    <NavLink to="/portfolio"
+                                    onClick={this.closeNavigation}
+                                    activeStyle={activeStyleNav}>
+                                    Portfolio
+                                    </NavLink>
+                                    </li>
+
+                    <li className="nav-link grow">
+                    <NavLink to="/eduskills"
+                    onClick={this.closeNavigation}
+                    activeStyle={activeStyleNav}>
+                        Education and Skills
                     </NavLink>
                     </li>
-                    <li className="nav-link grow">
-                        <NavLink to="/portfolio"
-                        onClick={this.closeNavigation}>
-                        Portfolio
-                        </NavLink>
-                        </li>
-                <li className="nav-link grow"
-                onClick={this.closeNavigation}>
-                <NavLink to="/skills">
-                    Skills
-                </NavLink>
-                </li>
-                <li className="nav-link grow" 
-                onClick={this.closeNavigation}>
-                <NavLink to ="/contact">
+
+                <li className="nav-link grow">
+                <NavLink to ="/contact"
+                onClick={this.closeNavigation}
+                activeStyle={activeStyleNav}>
                 Contact
                 </NavLink>
+
                 </li>
             </ul>
         </nav>
@@ -115,4 +124,5 @@ class Navbar extends Component {
     }
 }
 
+let activeStyleNav = {borderBottom: '1px solid var(--shadow)'}
 export default Navbar

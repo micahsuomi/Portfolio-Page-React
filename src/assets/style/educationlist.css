@@ -1,0 +1,28 @@
+.education-list__container {
+    padding: 8rem 15rem;
+    margin-top: 3rem;
+
+}
+
+.education-list__container h1 {
+    color: var(--shadow);
+    text-transform: uppercase;
+    font-size: var(--font-size-big);
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.education-list__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .education-list__container {
+        padding: 8rem 3rem;
+       
+    }
+}

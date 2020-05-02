@@ -87,6 +87,10 @@
     display: flex;
     justify-content: center;
 }
+
+.tech-skills-wrapper h3 {
+    display: block;
+}
 .tech-img {
     height: 6rem;
     width: 6rem;

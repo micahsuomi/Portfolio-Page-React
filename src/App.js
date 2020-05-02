@@ -6,7 +6,7 @@ import Home from './components/header/Home';
 import About from './components/about/About';
 import PortfolioList from './components/portfolio/PortfolioList';
 import ViewItem from './components/portfolio/ViewItem';
-import Skills from './components/skills/Skills';
+import EducationSkills from './components/skills/Education&Skills';
 import Contact from './components/contact/Contact';
 import BackToTopButton from './components/commons/BackToTopButton';
 import Footer from './components/footer/Footer';
@@ -66,7 +66,7 @@ class App extends Component {
         id={props.match.params.id}
         {...props} />} />
 
-        <Route path={'/skills'} component={Skills} />
+        <Route path={'/eduskills'} component={EducationSkills} />
 
         <Route path={'/contact'} component={Contact} />
 

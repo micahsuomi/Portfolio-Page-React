@@ -31,11 +31,11 @@ nav ul li a {
 
 nav ul li a:hover {
     opacity: 0.9;
-    color: var(--hover);
+    color: var(--shadow);
 }
 
 .nav-link__active {
-    color: var(--hover);
+    border-bottom: 1px solid var(--shadow);
 }
 
 @media(max-width: 850px) {
