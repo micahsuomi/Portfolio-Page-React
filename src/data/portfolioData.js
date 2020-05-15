@@ -11,7 +11,6 @@ import imageNoirflix from '../assets/imgs/app-9.jpg';
 import imageEvenFlow from '../assets/imgs/app-10.jpg';
 import imageSketch from '../assets/imgs/app-11.jpg';
 import imageEat from '../assets/imgs/app-12.jpg';
-import imageStarAPI from '../assets/imgs/app-discard.jpg';
 
 import html from '../assets/imgs/html-logo.png';
 import css from '../assets/imgs/css-logo.png';
@@ -73,20 +72,6 @@ export const portfolioData = [
         url: "https://weather-countries-data-react-app.netlify.com/?_ga=2.21003827.986614943.1584280711-1552463421.1569967762",
         githubUrl: "https://github.com/micahsuomi/Weather-and-countries-data-react-app"
 
-    },
-
-  
-    {
-        id: uuidv4(),
-        img: imageStarAPI,
-        name: "STAR WARS API DATA",
-        type: "React App",
-        description: "This React App uses the SWAPI (Star Wars API) website to display Star Wars data. Here are displayed some movies, characters, planets and starships data. This was my very first React App I built a couple of weeks within learning React for the first time.",
-        techs: [html, css, javaScript, react],
-        url: "https://starwarsapis.netlify.com/",
-        githubUrl: "https://github.com/micahsuomi/Star-Wars-APIs-React-App"
-
-        
     },
 
     {
