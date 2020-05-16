@@ -1,5 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 import imageCrypto from '../assets/imgs/app-1-big.jpg';
+import imageArt from '../assets/imgs/app-13.png';
 import imageReact from '../assets/imgs/app-2-big.jpg';
 import imageBlog from '../assets/imgs/app-3-big.jpg';
 import imageWeather from '../assets/imgs/app-4-big.jpg';
@@ -13,6 +14,9 @@ import imageSketch from '../assets/imgs/app-11.jpg';
 import imageEat from '../assets/imgs/app-12.jpg';
 
 import html from '../assets/imgs/html-logo.png';
+import gatsby from '../assets/imgs/gatsby-logo.png';
+import graphqlLogo from '../assets/imgs/graphql-logo.png';
+import contentful from '../assets/imgs/contentful-logo.png';
 import css from '../assets/imgs/css-logo.png';
 import sass from '../assets/imgs/sass-logo.png';
 import bootstrap from '../assets/imgs/bootstrap-logo.png';
@@ -32,6 +36,19 @@ export const portfolioData = [
         techs: [html, css, javaScript, react],
         url: "https://crypto-lite-tracker.netlify.com/",
         githubUrl: "https://github.com/micahsuomi/Crypto-Tracker-React-App"
+
+        
+    },
+
+    {
+        id: uuidv4(),
+        img: imageArt,
+        name: "Michele Zucca Art Website",
+        type: "Gatsby App",
+        description: "Art is another passion of mine, and in my art website I included everything I do related to traditional paintings, photography, digital art and an art blog. I had made couple of years ago a Wordpress website when I did not know how to code. Guess what? It is time for that website to be taken off, as I made a fresh art portfolio website using Gatsby, React, Graphql and Contentful. I enjoy very much working with the JAMStack and I find it extremely useful when making portfolio websites.",
+        techs: [gatsby, graphqlLogo, react, contentful, html, css, javaScript],
+        url: "https://michelezucca-art.netlify.app/",
+        githubUrl: "https://github.com/micahsuomi/Michele-Zucca-Art-Website"
 
         
     },
