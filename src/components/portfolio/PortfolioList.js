@@ -8,12 +8,7 @@ class PortfolioList extends Component {
         super(props);
         this.state = {
             portfolio: portfolioData,
-            isReactShowing: true,
-            isJavaScriptShowing: false,
-            isWebsiteShowing: false,
-
            
-            
         }
 
      
@@ -34,7 +29,7 @@ class PortfolioList extends Component {
         return (
 
             
-                <div className="portfolio-container headline" id="portfolio" data-aos="fade-right">
+                <div className="portfolio-container headline" id="portfolio">
                     <h2><span className="port-header">Portfo</span>lio Work</h2>
                         <div className="portfolio-type-wrapper">
                             <div className="portfolio-wrapper show" id="websites-projects">
@@ -42,7 +37,6 @@ class PortfolioList extends Component {
                             </div> 
                         </div>
                     </div>
-
 
         )
 
@@ -55,5 +49,4 @@ const styles = {
     style2: {backgroundColor: '#8293b3'}
 }
 
-console.log(styles.style1)
 export default PortfolioList;

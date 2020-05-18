@@ -24,16 +24,16 @@
     text-decoration: none;
     font-size: var(--font-size-medium);
     color: var(--dark);
+    margin: 1rem;
 
 }
 
 .arrow-alt-circle-left {
     color: var(--dark);
-    margin: 1rem;
 }
 
 .back-to-portfolio {
-    margin-left: 1rem;
+    margin-right: 2rem;
 }
 .view-item__wrapper {
     display: grid;

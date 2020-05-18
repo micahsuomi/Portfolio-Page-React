@@ -7,7 +7,7 @@ const PortfolioItem = (props) => {
     let {id, img, name, type} = props.portfolioItem;
     return (
         
-        <div className="website-card-container website-hide website grow tagline display" id="evenflow" data-aos="fade-left">
+        <div className="website-card-container website-hide website grow tagline display" id="evenflow" data-aos="flip-up">
                 <img src={img} alt="" />
                     <div className="website_show websiteblur">
                         <div className="website_show-display">
