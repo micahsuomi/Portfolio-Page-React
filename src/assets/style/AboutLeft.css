@@ -38,9 +38,9 @@
 }
 
 @media screen and (max-width: 320px) {
-    .about-text {
+    .about-text__paragraph {
         
-        padding: 3rem 6rem;
+        padding: 2rem 4rem;
 
     }
 

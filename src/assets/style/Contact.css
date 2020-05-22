@@ -19,7 +19,6 @@
     justify-content: center;
     align-items: center;
     padding-top: 5rem;
-    height: 60rem;
     
 }
 
@@ -100,6 +99,8 @@
 
     .contact-grid {
         grid-template-columns: 1fr;
+        justify-items: center;
+        margin-top: 7rem;
 
     }
 }
@@ -117,5 +118,9 @@
 
     .react-logo {
         width: 31%;
+    }
+
+    .contact-text {
+        padding: 3rem 1rem;
     }
 }

@@ -13,8 +13,9 @@ const Home = () => {
               <figure class="front-gallery-image image-3" data-aos="flip-down"></figure>
               <figure class="front-gallery-image image-4" data-aos="flip-left"></figure>
               <figure class="front-gallery-image image-5" data-aos="flip-right"></figure>
-                <div className="front-wrapper" data-aos="flip-right">
-                    <h1 className="tagline title" data-aos="flip-right">Moi, I'm Michele Zucca</h1>
+                <div className="front-wrapper" data-aos="flip-up">
+                    <div className="title-container" data-aos="flip-up">
+                    <h1 className="tagline title">Moi, I'm Michele Zucca</h1>
                     <h2>Full-Stack Developer</h2>
                     <div className="view-work__link__container">
                         <button className="view-portfolio__link grow">
@@ -22,6 +23,7 @@ const Home = () => {
                             View My Work
                         </NavLink>
                         </button>
+                    </div>
                     </div>
                     </div>
                     <figure class="front-gallery-image image-6" data-aos="flip-down"></figure>

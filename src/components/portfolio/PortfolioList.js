@@ -25,10 +25,8 @@ class PortfolioList extends Component {
         portfolioItem={portfolioItem} />
     })
        
-
         return (
 
-            
                 <div className="portfolio-container headline" id="portfolio">
                     <h2><span className="port-header">Portfo</span>lio Work</h2>
                         <div className="portfolio-type-wrapper">

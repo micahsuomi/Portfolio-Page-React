@@ -82,6 +82,7 @@
     align-items: center;
     list-style: none;
     margin-top: 1rem;
+    flex-wrap: wrap;
 }
 
 .tech-img {
@@ -120,9 +121,13 @@
     color: skyblue;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .view-item__container {
-        padding: 27rem 5rem;
+        padding: 27rem 2rem;
+    }
+
+    .project-img {
+        width: 90%;
     }
 }
 
