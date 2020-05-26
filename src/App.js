@@ -22,12 +22,13 @@ import {
 
 AOS.init({
   offset: 200,
-  duration: 800
+  duration: 800,
+
 });
 
 AOS.init({
 disable: function() {
-  let maxWidth = 1868;
+  let maxWidth = 800;
   return window.innerWidth < maxWidth;
 }
 

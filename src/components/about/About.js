@@ -2,9 +2,18 @@ import React from 'react';
 import AboutLeft from './AboutLeft';
 import AboutRight from './AboutRight';
 import AboutIconList from './AboutIconsList';
+import AOS from 'aos';
+
 import '../../assets/style/About.css';
 
 const About = () => {
+    AOS.init({
+        disable: function() {
+          let maxWidth = 800;
+          return window.innerWidth < maxWidth;
+        }
+        
+        })
     return (
 
         <div className="about-container headline" id="about">

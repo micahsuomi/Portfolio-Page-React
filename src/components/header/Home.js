@@ -1,10 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {NavLink} from 'react-router-dom';
+import AOS from 'aos';
 import '../../assets/style/Home.css';
 
-
 const Home = () => {
-    
+    AOS.init({
+        disable: function() {
+          let maxWidth = 700;
+          return window.innerWidth < maxWidth;
+        }
+        
+        })
         return (
             <div>
                 <div className="frontpage-container" data-aos="fade-right">
@@ -16,7 +22,7 @@ const Home = () => {
                 <div className="front-wrapper" data-aos="flip-up">
                     <div className="title-container" data-aos="flip-up">
                     <h1 className="tagline title">Moi, I'm Michele Zucca</h1>
-                    <h2>Full-Stack Developer</h2>
+                    <h2>Web Developer</h2>
                     <div className="view-work__link__container">
                         <button className="view-portfolio__link grow">
                         <NavLink to ="/portfolio" className="portfolio-link">
