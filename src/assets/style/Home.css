@@ -96,6 +96,7 @@
     background-image: linear-gradient(var(--background-hero)), url("../imgs/app-3-big.jpg");
     background-size: cover;
     background-position: center;
+    z-index: -1;
 }
 
 @media(max-width: 768px) {
@@ -120,6 +121,8 @@
     background-image: linear-gradient(var(--background-hero)), url("../imgs/app-9.jpg");
     background-size: cover;
     background-position: center;
+    z-index: -1;
+
 
 }
 
@@ -171,6 +174,7 @@
     color: var(--light); 
     font-weight: 500;
     margin-top: 2rem;
+    text-transform: uppercase;
     /* color: var(--background-hero); */
 
 
@@ -264,7 +268,6 @@
 
 
 .title {
-    font-size: 60px;
     line-height: 1.9;
     animation: move 60s infinite alternate;
     transition: all ease-in-out 10s;
@@ -275,6 +278,10 @@
 
 
 } 
+.title h1 {
+    font-size: 480px;
+
+}
 
 @keyframes move {
     0% {
@@ -375,7 +382,7 @@
     }
 
     .title-container {
-        top: 40%;
+        top: 44%;
         left: 12%;
         width: 40rem;
         background-image: linear-gradient(rgba(54, 45, 45, 0.2), rgba(170, 172, 197, 0.3));
