@@ -51,7 +51,7 @@ body {
   --shaded-dark: linear-gradient(120deg, #9becd4 0%, #46dfdf 100%);
   --cardline:rgb(212, 186, 186);
   --brown-red: rgb(134, 34, 9);
-  --background-hero: rgba(63, 47, 47, 0.5), rgba(214, 15, 65, 0.5);
+  --background-hero: rgba(100, 90, 90, 0.5), rgba(71, 67, 75, 0.5);
 
   --font-size-big: 4rem;
   --font-size-mediumbig: 3rem;

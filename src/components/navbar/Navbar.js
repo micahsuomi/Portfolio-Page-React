@@ -124,5 +124,5 @@ class Navbar extends Component {
     }
 }
 
-let activeStyleNav = {borderBottom: '1px solid var(--shadow)'}
+let activeStyleNav = {borderBottom: '2px solid var(--shadow)'}
 export default Navbar
