@@ -9,7 +9,7 @@
     width: 100%;
     /* -webkit-clip-path: circle(61.5% at 50% 0);
     clip-path: circle(61.5% at 50% 0);   */
-    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 67% 90%, 75% 100%, 51% 91%, 0 91%);
+    /* clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 67% 90%, 75% 100%, 51% 91%, 0 91%); */
 
     display: grid;
     grid-template-rows: repeat(5, 1fr);

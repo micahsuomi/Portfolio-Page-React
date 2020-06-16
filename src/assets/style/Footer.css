@@ -1,5 +1,5 @@
 .dark-footer {
-    margin-top: 10rem;
+    margin-top: -2rem;
     padding: 2rem;
     background: var(--dark-shaded);
     -webkit-clip-path: polygon(50% 0, 100% 15%, 100% 100%, 50% 100%, 0 100%, 0 15%);
