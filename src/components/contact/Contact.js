@@ -4,9 +4,6 @@ import card1 from '../../assets/imgs/card3.png';
 import card2 from '../../assets/imgs/card5.png';
 import card3 from '../../assets/imgs/card4.png';
 import reactLogo from '../../assets/imgs/react-logo.png';
-import ContactForm from './ContactForm';
-
-
 
 const Contact = () => {
     

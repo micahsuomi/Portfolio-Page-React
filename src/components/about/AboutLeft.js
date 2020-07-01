@@ -6,7 +6,7 @@ class AboutLeft extends Component {
         super(props);
         this.state = {
             paragraph1: "I'm a Junior Web Developer trained at Integrify Academy in Helsinki. I have started coding and studying web development as self-taught. I think of programming as an art. Nothing can be mastered without constant practice, repetition, self-discipline, and continuous learning and improvement.",
-            paragraph2: "I focus on responsive and user-friendly UI, functionality, and data manipulation. My stacks of choice are currently the JAMStack and the MERN stack. Although I\'m training full-stack, I\'m more front-end oriented and I love working with React and solving JavaScript coding challenges. When I'm not coding, I'm into UI/UX Design, painting, digital illustrations and photography."
+            paragraph2: "I focus on responsive and user-friendly UI, functionality, and data manipulation. My stacks of choice are currently the JAMStack and the MERN stack. Although I'm training full-stack, I'm more front-end oriented and I love working with React and solving JavaScript coding challenges. When I'm not coding, I'm into UI/UX Design, painting, digital illustrations and photography."
         }
     }
     render() {

@@ -42,9 +42,5 @@ class PortfolioList extends Component {
 
 }
 
-const styles = {
-    style1: {backgroundColor: '#3d4554'},
-    style2: {backgroundColor: '#8293b3'}
-}
 
 export default PortfolioList;
