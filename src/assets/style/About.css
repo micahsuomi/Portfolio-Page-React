@@ -1,5 +1,6 @@
 .about-container {
-    margin-top: 10rem;
+    margin-top: 5rem;
+    padding: 5rem 15rem;
     
 }
 
@@ -18,7 +19,7 @@
     justify-content: center;
     justify-items: center;
     align-items: center;
-    margin-top: 4rem;
+    margin-top: 7rem;
 }
 
 @media screen and (max-width: 500px) {

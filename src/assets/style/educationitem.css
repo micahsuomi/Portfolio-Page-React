@@ -1,7 +1,7 @@
 .education-card__container {
     display: grid;
     grid-template-columns: 30% 70%;
-    padding: 3rem 3rem;
+    padding: 3rem 7rem;
     border: 2px solid rgba(160, 135, 135, 0.1);
     margin: 1rem;
     align-items: center;
@@ -11,7 +11,7 @@
 }
 
 .education-card__img {
-    width: 54%;
+    width: 40%;
 }
 
 

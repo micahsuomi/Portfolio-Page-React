@@ -3,7 +3,7 @@ const AboutIconsListData = [
         id: 1,
         icon: "fas fa-edit fa-4x",
         title: "UI Focus",
-        description: "I enjoy working with UI components, especially on React. With a strong background in art and design, I have an excellent understanding and an eye for composition, layouts, fonts and whitespaces, creating beautiful looking UI's."
+        description: "I enjoy working with UI components, especially on React. With a strong background in art and design, I have an excellent understanding and an eye for composition and layouts, creating beautiful looking UI's."
 
     },
 
@@ -11,7 +11,7 @@ const AboutIconsListData = [
         id: 2,
         icon: "fas fa-code fa-4x",
         title: "Data Structures Maniac",
-        description: "I love fetching and manipulating data. Looping through arrays of ojbects, destructuring, creating new data structures is my favorite playground. Being able to access and manipulate data is a must for any developer."
+        description: "I love working with data. It is one of my favorite playgrounds. Being able to create, edit, access and manipulate data is a must for any developer."
 
     },
 

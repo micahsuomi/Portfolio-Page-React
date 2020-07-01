@@ -1,6 +1,7 @@
 .view-item__container {
-    padding: 7rem 5rem;
+    padding: 13rem 5rem;
     background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+    min-height: 100vh;
 
 }
 
