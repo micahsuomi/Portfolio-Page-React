@@ -2,7 +2,7 @@ import { v4 as uuidv4 } from 'uuid';
 import imageCrypto from '../assets/imgs/app-1-big.jpg';
 import imageArt from '../assets/imgs/app-13.png';
 import imageReact from '../assets/imgs/app-2-big.jpg';
-import imageBlog from '../assets/imgs/app-3-big.jpg';
+import imageBlog from '../assets/imgs/app-3.jpg';
 import imageWeather from '../assets/imgs/app-4-big.jpg';
 import imageJavaScript from '../assets/imgs/app-5.jpg';
 import imageWorld from '../assets/imgs/app-6.jpg';
