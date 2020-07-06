@@ -4,17 +4,15 @@ import { NavLink } from 'react-router-dom';
 
 const ViewItem = (props) => {
     let {id, portfolio} = props;
-    console.log(id, portfolio)
     const filteredPortfolioItem = portfolio.find((item) => item.id === id);
-    let formattedImages = filteredPortfolioItem.techs.map((tech, i) => <li key={i}><img src={tech} alt="tech used pic" className="tech-img"/></li>)
-    console.log(formattedImages)
+    let formattedImages = filteredPortfolioItem.techs.map((tech, i) => <li key={i} className="tech-image__container"><img src={tech} alt="tech used pic" className="tech-img"/></li>)
     
     return (
         <div className="view-item__container">
             <div className="view-item">
           <div className="view-item__header__nav">
               <NavLink to ="/portfolio" className="back-to-portfolio__link grow">
-              <i class="far fa-arrow-alt-circle-left"></i>
+              <i className="far fa-arrow-alt-circle-left"></i>
                    <span className="back-to-porfolio">Back to Portfolio</span>
                   </NavLink></div>
 

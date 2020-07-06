@@ -43,10 +43,7 @@ class App extends Component {
       }
   }
   render() {
-    for(const item of this.state.portfolio) {
-      let {name} = item
-      console.log(name)
-    }
+    
     return (
       <Router>
 

@@ -86,10 +86,15 @@
     flex-wrap: wrap;
 }
 
+.tech-image__container {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+}
+
 .tech-img {
-    margin: .6rem;
-    width: 5rem;
-    height: 5rem;
+    width: 100%;
 }
 
 .buttons-wrapper {

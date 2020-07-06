@@ -22,6 +22,10 @@ import sass from '../assets/imgs/sass-logo.png';
 import bootstrap from '../assets/imgs/bootstrap-logo.png';
 import javaScript from '../assets/imgs/js-logo.png'
 import react from '../assets/imgs/react-logo.png';
+import node from '../assets/imgs/node-logo.png';
+import express from '../assets/imgs/express-logo.png';
+import mongoDb from '../assets/imgs/mongodb-logo.png';
+
 
 
 
@@ -69,12 +73,12 @@ export const portfolioData = [
     {
         id: uuidv4(),
         img: imageBlog,
-        name: "React Blog App",
-        type: "React App",
-        description: "This is a CRUD app that displays posts from the most recent one. User can add new posts, view, edit or delete single posts. The app has been built with React router which lets the user navigate through the different app's functionality. ",
-        techs: [html, css, javaScript, react],
-        url: "https://blog-app-react-router.netlify.com/",
-        githubUrl: "https://github.com/micahsuomi/Router-App-blog"
+        name: "MERN Blog App",
+        type: "MERN App",
+        description: "In this CRUD blog app users can add, view, edit or delete single posts. The app has been built with React for Front-End and Node, Express and Mongo DB for backend. The data is fetched through Axios. ",
+        techs: [html, css, javaScript, react, node, express, mongoDb],
+        url: "https://alluring-lake-clark-72634.herokuapp.com/",
+        githubUrl: "https://github.com/micahsuomi/MERN-Blog-App"
 
     },
 

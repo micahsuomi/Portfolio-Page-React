@@ -41,12 +41,10 @@ class Navbar extends Component {
         let navLinksClass =["navbar-links open close"];
         if(this.state.addClass === false && this.state.isClicked === false) {
             navLinksClass.push("open");
-            console.log(navLinksClass)
         }
            
         let lineRotate1 = ["line rotate-1"];
         if(this.state.addRotate === true) {
-            console.log('here rotating')
             lineRotate1.push("rotate-1");
         }
 

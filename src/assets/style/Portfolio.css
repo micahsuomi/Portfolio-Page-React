@@ -78,16 +78,15 @@
     .portfolio-container {
         padding: 2rem 0rem;
     }
+
+    .portfolio-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
    
 }
 
-@media screen and (max-width: 768px) {
-    .portfolio-wrapper,
-.portfolio-wrapper-2 {
-    grid-template-columns: repeat(3, 1fr);
-    
-}
-}
+
 
 
 @media screen and (max-width: 500px) {

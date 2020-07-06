@@ -21,6 +21,12 @@
     align-items: center;
     margin-top: 7rem;
 }
+@media screen and (max-width: 1024px) {
+
+.about-container {
+    padding: 5rem 6rem;
+}
+}
 
 @media screen and (max-width: 500px) {
     .about-wrapper {
