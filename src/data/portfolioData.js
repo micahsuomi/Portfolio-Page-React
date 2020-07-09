@@ -77,7 +77,7 @@ export const portfolioData = [
         type: "MERN App",
         description: "In this CRUD blog app users can add, view, edit or delete single posts. The app has been built with React for Front-End and Node, Express and Mongo DB for backend. The data is fetched through Axios. ",
         techs: [html, css, javaScript, react, node, express, mongoDb],
-        url: "https://alluring-lake-clark-72634.herokuapp.com/",
+        url: "https://mern-blogsite-app.herokuapp.com/",
         githubUrl: "https://github.com/micahsuomi/MERN-Blog-App"
 
     },

@@ -1,9 +1,5 @@
 .portfolio-container {
-    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%, url("../../assets/imgs/portfolio-background.png"));
-    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
     background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
-    /* background-image: linear-gradient(rgba(239, 233, 243, 0.1), rgba(82, 53, 53, 0.2)), url("../../assets/imgs/portfolio-background.png"); */
-
     background-position: center;
     background-size: cover;
     margin-top: 2rem;
@@ -54,10 +50,9 @@
     outline: none;
 }
 
-.portfolio-wrapper,
-.portfolio-wrapper-2 {
+.portfolio-wrapper {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 0.5rem;
     padding: 0 3rem 0 0;
     animation: appear;
