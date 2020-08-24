@@ -75,7 +75,7 @@ export const portfolioData = [
         img: imageBlog,
         name: "MERN Blog App",
         type: "MERN App",
-        description: "In this CRUD blog app users can add, view, edit or delete single posts. The app has been built with React for Front-End and Node, Express and Mongo DB for backend. The data is fetched through Axios. ",
+        description: "In this CRUD blog app users can search, add, view, edit or delete blog posts. The app has been built with React for Front-End and Node, Express and Mongo DB for backend. The data is fetched with the Axios library.",
         techs: [html, css, javaScript, react, node, express, mongoDb],
         url: "https://mern-blogsite-app.herokuapp.com/",
         githubUrl: "https://github.com/micahsuomi/MERN-Blog-App"
@@ -112,7 +112,7 @@ export const portfolioData = [
         id: uuidv4(),
         img: imageWorld,
         name: "World Countries Data",
-        type: "JavaScript App",
+        type: "JavaScript",
         description: "This app made during my study time at Integrify shows countries' data with different sorting functions, by name, capital, and population through a search option. There are also statistics for population and languages built with pure JavaScript without the use of any library or plugins.",
         techs: [html, css, javaScript],
         url: "https://micahsuomi.github.io/World-Countries-Data/",
