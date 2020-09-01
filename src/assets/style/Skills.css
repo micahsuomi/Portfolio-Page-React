@@ -1,5 +1,5 @@
 .skills-container {
-    padding: 11rem 10rem;
+    padding: 5rem 1rem;
     margin-bottom: 20rem;
 }
 
@@ -63,8 +63,8 @@
 
 .skills-wrapper1 {
     background: var(--dark-shaded);
-    -webkit-clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
-    clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
     padding: 5rem 3rem;
 
 
@@ -73,8 +73,8 @@
 .skills-wrapper2 {
     background: #69e1e6;
     opacity: 0.6;
-    -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
-    clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
     font-weight: 700;
     padding: 5rem 3rem;
 
@@ -155,7 +155,17 @@
     .skills-wrapper {
         grid-template-columns: 1fr;
         height: 100%;
+        padding: 0;
 
+    }
+
+    .skills-wrapper ul {
+        list-style: none;
+        margin: 2rem -1px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
     .skills-wrapper1,
     .skills-wrapper2 {

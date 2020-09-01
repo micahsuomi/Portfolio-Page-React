@@ -396,7 +396,7 @@
     }
 
     .title-container {
-        top: 44%;
+        top: 36%;
         left: 12%;
         width: 40rem;
         background-image: linear-gradient(rgba(54, 45, 45, 0.2), rgba(170, 172, 197, 0.3));
@@ -420,6 +420,6 @@
 
 @media screen and (max-width: 320px) {
     .title-container {
-        left: -25%;
+        left: 5%;
     }   
 }

@@ -19,16 +19,8 @@ const ViewItem = (props) => {
     
     return (
         <div className="view-item__container">
-            <div className="view-item">
-          <div className="view-item__header__nav">
-              <NavLink to ="/portfolio" className="back-to-portfolio__link grow">
-              <i className="far fa-arrow-alt-circle-left"></i>
-                   <span className="back-to-porfolio">Back to Portfolio</span>
-                  </NavLink></div>
-
-            <div className="view-item__wrapper">
-                <div>
-            {
+             <div>
+                {
                         slider.prev !== '' ?
 
                         <NavLink to ={slider.prev}><i className="fas fa-chevron-left fa-2x slider-arrow__left grow"></i></NavLink>
@@ -36,8 +28,16 @@ const ViewItem = (props) => {
                         : ''
 
                     }
-            </div>
-            
+                 </div>
+            <div className="view-item">
+          <div className="view-item__header__nav">
+              <NavLink to ="/portfolio" className="back-to-portfolio__link grow">
+              <i className="far fa-arrow-alt-circle-left"></i>
+                   <span className="back-to-porfolio">Back to Portfolio</span>
+                  </NavLink>
+                  </div>
+
+            <div className="view-item__wrapper">
             <div className="view-item__left">
             <img src={filteredPortfolioItem.img} alt="portfolio big display" className="project-img"/>
             </div>
@@ -55,6 +55,10 @@ const ViewItem = (props) => {
                  <a href={`${filteredPortfolioItem.githubUrl}`} target="blank" className="link-github"><button className="portfolio-btn grow">View on Github</button></a>
             </div>
             </div>
+            </div>
+           
+            </div>
+            <div>
             {
                     slider.next !== '' ?
 
@@ -63,9 +67,7 @@ const ViewItem = (props) => {
                     : ''
 
                 }
-            </div>
-           
-            </div>
+                </div>
 
         </div>
     )
