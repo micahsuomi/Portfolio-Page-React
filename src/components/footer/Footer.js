@@ -6,9 +6,10 @@ import SocialLink from '../commons/SocialLink';
 const Footer = () => {
 
     const formattedData = socialData.map((item, index) => (
-
+        
         <SocialLink 
         key={index}
+        name={item.name}
         link={item.link} 
         icon={item.icon} />
     ))

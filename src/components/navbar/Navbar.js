@@ -11,11 +11,10 @@ class Navbar extends Component {
             addRotate: true,
             makeTransparent: false
         }
-        this.toggle = this.toggle.bind(this);
 
     }
 
-    toggle() {
+    toggle = () => {
         this.setState({
             isClicked: false,
             addClass : !this.state.addClass, 

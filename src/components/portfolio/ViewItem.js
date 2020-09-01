@@ -23,7 +23,7 @@ const ViewItem = (props) => {
                 {
                         slider.prev !== '' ?
 
-                        <NavLink to ={slider.prev}><i className="fas fa-chevron-left fa-2x slider-arrow__left grow"></i></NavLink>
+                        <NavLink to ={slider.prev}><i className="fas fa-chevron-left fa-2x slider-arrow__left grow" aria-label="arrow link to previous project"></i></NavLink>
 
                         : ''
 
@@ -62,7 +62,7 @@ const ViewItem = (props) => {
             {
                     slider.next !== '' ?
 
-                    <NavLink to ={slider.next}><i className="fas fa-chevron-right fa-2x slider-arrow__right grow"></i></NavLink> 
+                    <NavLink to ={slider.next}><i className="fas fa-chevron-right fa-2x slider-arrow__right grow" aria-label="arrow link to next project"></i></NavLink> 
 
                     : ''
 

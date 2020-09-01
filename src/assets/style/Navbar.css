@@ -46,8 +46,8 @@ nav ul li a:hover {
     }
 
     .upper-line {
-        width: 25px;
-        height: 2px;
+        width: 28px;
+        height: 3px;
         background:rgb(14, 13, 13);
         margin: 0 -2px 8.2px;
         opacity: 0.9;
@@ -55,7 +55,7 @@ nav ul li a:hover {
     }
 
     .line {
-        width: 25px;
+        width: 28px;
         height: 2px;
         background:rgb(14, 13, 13);
         margin: -2px;
@@ -63,8 +63,8 @@ nav ul li a:hover {
     }
 
     .lower-line {
-        width: 25px;
-        height: 2px;
+        width: 28px;
+        height: 3px;
         background:rgb(14, 13, 13);
         margin: 8.2px -2px -10.2px;
         opacity: 0.9;
@@ -74,7 +74,7 @@ nav ul li a:hover {
     .hamburger {
         position: absolute;
         cursor: pointer;
-        top: 39.3%;
+        top: 54.3%;
         right: 2.5%;
         transform: translate(-5%, -45%);
         z-index: 2;
@@ -143,10 +143,11 @@ nav ul li a:hover {
 @media screen and (max-width: 500px) {
 
     nav {
-        height: 57px;
+        height: 42px;
     }
 
     .hamburger {
-        right: 3%;
+        right: 4%;
+        top: 45%;
     }
 }

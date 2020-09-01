@@ -158,6 +158,10 @@
         
     }
 
+    .view-item {
+        padding: 2rem 2rem;
+    }
+
     .project-img {
         width: 65%;
     }

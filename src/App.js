@@ -33,6 +33,7 @@ disable: function() {
 }
 
 })
+console.log(AOS.init())
 
 
 class App extends Component {

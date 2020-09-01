@@ -7,8 +7,8 @@ const PortfolioItem = (props) => {
     let {id, img, name, type} = props.portfolioItem;
     return (
         
-        <div className="website-card-container website-hide website grow tagline display" id="evenflow">
-                <img src={img} alt="" />
+        <div className="website-card-container website-hide website grow tagline display">
+                <img src={img} alt={name}/>
                     <div className="website_show websiteblur">
                         <div className="website_show-display">
                             <h4 className="websitename">{name}</h4> 

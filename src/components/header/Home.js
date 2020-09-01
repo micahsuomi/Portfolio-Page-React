@@ -4,6 +4,14 @@ import AOS from 'aos';
 import '../../assets/style/Home.css';
 
 const Home = () => {
+    
+AOS.init({
+    offset: 200,
+    duration: 800,
+  
+  });
+  
+  
     AOS.init({
         disable: function() {
           let maxWidth = 700;
