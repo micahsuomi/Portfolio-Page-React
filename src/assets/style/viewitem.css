@@ -23,7 +23,7 @@
 
 .back-to-portfolio__link {
     text-decoration: none;
-    font-size: var(--font-size-medium);
+    font-size: var(--font-size-small);
     color: var(--dark);
     margin: 1rem;
 
@@ -38,7 +38,7 @@
 }
 .view-item__wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 7% 43% 43% 7%;
     justify-items: center;
     align-items: center;
     padding: 3rem 2rem;
@@ -46,8 +46,13 @@
  
 }
 
+.slider-arrow__right,
+.slider-arrow__left {
+    color: var( --dark);
+}
+
 .project-img {
-    width: 100%;
+    width: 87%;
     box-shadow: 3rem 2rem 3rem rgba(95, 90, 90, 0.6); 
     border-radius: 3px;
 

@@ -4,7 +4,17 @@ import { NavLink } from 'react-router-dom';
 
 const ViewItem = (props) => {
     let {id, portfolio} = props;
-    const filteredPortfolioItem = portfolio.find((item) => item.id === id);
+    const slider = {
+        index: '',
+        prev: '',
+        next: ''
+    } 
+    const filteredPortfolioItem = portfolio.find((item, index) => {
+        slider.index = index
+        slider.prev = index === 0 ? '' : portfolio[index - 1].id
+        slider.next = index === portfolio.length -1 ? '' : portfolio[index +1].id
+        return item.id === id
+    });
     let formattedImages = filteredPortfolioItem.techs.map((tech, i) => <li key={i} className="tech-image__container"><img src={tech} alt="tech used pic" className="tech-img"/></li>)
     
     return (
@@ -17,6 +27,16 @@ const ViewItem = (props) => {
                   </NavLink></div>
 
             <div className="view-item__wrapper">
+                <div>
+            {
+                        slider.prev !== '' ?
+
+                        <NavLink to ={slider.prev}><i className="fas fa-chevron-left fa-2x slider-arrow__left grow"></i></NavLink>
+
+                        : ''
+
+                    }
+            </div>
             
             <div className="view-item__left">
             <img src={filteredPortfolioItem.img} alt="portfolio big display" className="project-img"/>
@@ -35,7 +55,16 @@ const ViewItem = (props) => {
                  <a href={`${filteredPortfolioItem.githubUrl}`} target="blank" className="link-github"><button className="portfolio-btn grow">View on Github</button></a>
             </div>
             </div>
+            {
+                    slider.next !== '' ?
+
+                    <NavLink to ={slider.next}><i className="fas fa-chevron-right fa-2x slider-arrow__right grow"></i></NavLink> 
+
+                    : ''
+
+                }
             </div>
+           
             </div>
 
         </div>
