@@ -1,10 +1,10 @@
 import React from 'react';
 import AboutIcon from './AboutIcon';
 import '../../assets/style/AboutIconsList.css';
-import AboutIconsListData from './AboutIconsListData';
+import { aboutIconsData } from '../../data/aboutIconsData';
 
 const AboutIconsList = () => {
-    const aboutIconsListGroup = AboutIconsListData.map((item) => {
+    const aboutIconsListGroup = aboutIconsData.map((item) => {
         return <AboutIcon 
         key={item.id}
         icon={item.icon}
@@ -15,10 +15,9 @@ const AboutIconsList = () => {
 
             <div className="about-container2">
                 <div className="about-wrapper2">
-                        {aboutIconsListGroup}
-                        
+                        {aboutIconsListGroup}      
                 </div>
-                </div>
+            </div>
     )
 }
 

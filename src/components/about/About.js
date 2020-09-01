@@ -16,9 +16,9 @@ const About = () => {
         })
     return (
 
-        <div className="about-container headline" id="about">
+        <div className="about-container" id="about">
             <h1 className="about-header">About Me</h1>
-            <div className="about-wrapper">
+            <div className="about-wrapper"data-aos="fade-left">
                 <AboutLeft />
                 <AboutRight />
             </div>

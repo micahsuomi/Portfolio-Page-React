@@ -1,4 +1,4 @@
-const AboutIconsListData = [
+export const aboutIconsData = [
     {
         id: 1,
         icon: "fas fa-edit fa-4x",
@@ -35,4 +35,4 @@ const AboutIconsListData = [
 
 ]
 
-export default AboutIconsListData;
+export default aboutIconsData;

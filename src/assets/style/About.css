@@ -1,6 +1,6 @@
 .about-container {
     margin-top: 5rem;
-    padding: 5rem 15rem;
+    padding: 5rem 5rem;
     
 }
 
@@ -17,7 +17,6 @@
     grid-template-columns: repeat(2,1fr);
     grid-gap: 0;
     justify-content: center;
-    justify-items: center;
     align-items: center;
     margin-top: 7rem;
 }
